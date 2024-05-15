@@ -37,16 +37,14 @@ echo 'export PATH=$PATH:$HOME/.dotnet' >> ~/.bashrc
 echo "Installing C++ tools..."
 sudo apt-get -y install clang build-essential
 
-# Install VS Code
-echo "Installing VS Code..."
-wget -O vscode.deb https://go.microsoft.com/fwlink/?LinkID=760868
-sudo dpkg -i vscode.deb
-sudo apt-get install -f
-rm vscode.deb
-
 # Install VS Code extensions
 echo "Installing VS Code extensions..."
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-dotnettools.csharp
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode.cpptools-extension-pack
+code --install-extension ms-dotnettools.csharp
+code --install-extension ms-dotnettools.csdevkit
+code --install-extension ms-dotnettools.vscodeintellicode-csharp
 
 echo "Installation complete. Please restart your terminal for changes to take effect."
