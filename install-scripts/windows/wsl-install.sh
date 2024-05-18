@@ -39,8 +39,6 @@ sudo apt-get -y install clang build-essential
 
 # Install VS Code extensions
 echo "Installing VS Code extensions..."
-code --install-extension ms-vscode.cpptools
-code --install-extension ms-dotnettools.csharp
 code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode.cpptools-extension-pack
 code --install-extension ms-dotnettools.csharp
