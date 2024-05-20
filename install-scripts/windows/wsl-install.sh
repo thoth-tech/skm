@@ -1,4 +1,3 @@
-#Updated Script file
 #!/bin/bash
 
 # Define variables
